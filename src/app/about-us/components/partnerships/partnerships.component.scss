@@ -1,0 +1,98 @@
+.header-container {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+}
+.positioning{
+  position: relative;
+  top: 155px;
+}
+.card-data{
+  background-image: linear-gradient(#0d1623, rgba(#0870d8, 0.4)),
+  url("../../../../assets/aboutUs/partnership.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+h2{
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+.container_p {
+  padding: 5rem;
+  display: flex;
+  gap: 1.5rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.Pcard {
+  border-radius: 5px;
+  width: 22%;
+  height: 250px;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px -2px rgb(94 93 93 / 45%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.appear {
+  opacity: 1;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@media(min-width:0px) and (max-width:767px){
+  .Pcard{
+    width: 100%;
+  }
+  .positioning{
+    top: 100px;
+  }
+  .container_p{
+    gap: 2rem;
+  }
+
+  img{
+    height: 100%;
+  }
+}
+
+@media(min-width:768px) and (max-width:991px){
+  .Pcard{
+    width: 45%;
+  }
+  .positioning{
+    top: 100px;
+  }
+  img{
+    height: 100%;
+  }
+}

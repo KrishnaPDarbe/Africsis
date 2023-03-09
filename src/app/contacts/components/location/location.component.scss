@@ -1,0 +1,51 @@
+.map{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+//  max-width: 70vw;
+ iframe{
+  width: 70%;
+  box-shadow:0 3px 20px rgb(0 0 0 / 20%);
+ }
+}
+
+.map-container{
+  background:#24262b;
+  padding: 3rem;
+  h1,p{
+    color: #fff;
+    padding: 2rem;
+  }
+
+  p{
+    padding: 2rem 10rem;
+  }
+}
+
+h1{
+  text-align: center;
+}
+
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+}
+.positioning {
+  position: relative;
+  top: 155px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .positioning {
+    top: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .positioning {
+    top: 100px;
+  }
+}

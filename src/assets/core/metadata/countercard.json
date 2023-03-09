@@ -1,0 +1,22 @@
+[
+  {
+    "count":"267",
+    "description":"Projects Executed",
+    "icon":"./assets/core/projects/projects_exec.svg"
+  },
+  {
+    "count":"2,348",
+    "description":"Data Analytics",
+    "icon":"./assets/core/projects/projects_exec.svg"
+  },
+  {
+    "count":"450",
+    "description":"Data Management",
+    "icon":"./assets/core/projects/projects_exec.svg"
+  },
+  {
+    "count":"1,200",
+    "description":"Satisfied Customers",
+    "icon":"./assets/core/projects/projects_exec.svg"
+  }
+]

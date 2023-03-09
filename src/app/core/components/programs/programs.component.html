@@ -1,0 +1,23 @@
+<section class="card-section">
+  <div>
+    <h1>PROGRAMS</h1>
+    <h5>We offer a wide range of services and provide real-time data solutions</h5>
+  </div>
+  <div class="card-container">
+    <ng-container *ngFor="let program of programsData">
+    <div class="card">
+      <div class="card-header-af">
+        <h4>{{program.title}}</h4>
+      </div>
+      <div class="card-content">
+        <p>{{program.description}}</p>
+      </div>
+      <div class="card-footer-af">
+        <div class="button">
+          <a>Read more  &#x2192;</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  </div>
+</section>

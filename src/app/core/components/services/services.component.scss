@@ -1,0 +1,147 @@
+h1 {
+  text-align: center;
+  // margin: 50px auto 120px !important;
+  color: #fff;
+}
+
+.servicesRow{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem
+}
+section{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../assets/core/services/background.jpg');
+  background-attachment: fixed;
+// }
+// background: blue;
+}
+
+.main {
+  width: 100%;
+  min-height: 380px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.main .service {
+  background: #1e2f46;
+  padding: 1rem;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  box-shadow: 0 0 20px -15px #0303;
+  transition: transform .8s ;
+  color: #fff;
+}
+
+.service-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  background: #fff;
+  border: 18px solid #1e2f46;
+  // border-image: url('../../../../assets/core/services/background.jpg');
+}
+
+.service-logo img {
+  width: 50px;
+  margin-top: 20px;
+  transition: transform 1s;
+}
+
+.service h4 {
+  // height: 35px;
+  width: 80%;
+  background: #1e2f46;
+  margin: 1.5rem auto;
+  position: relative;
+}
+
+.service h4::after {
+  content: "";
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, #fff,#1e2f46);
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: -1;
+}
+
+.service h4::before {
+  content: "";
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right,#1e2f46, #fff);
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.shadowOne {
+  height: 200px;
+  width: 80%;
+  background: #1e2f46;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 10%;
+  z-index: -1;
+  box-shadow: 0 0 20px -15px #0303;
+  transition: transform .8s ;
+}
+
+.shadowTwo {
+  height: 200px;
+  width: 64%;
+  background: #1e2f46;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 18%;
+  z-index: -2;
+}
+
+.main:hover .shadowOne{
+  transform: translateY(-25px);
+}
+
+.main:hover .service{
+  transform: translateY(-50px);
+}
+
+
+.main:hover img{
+  transform: rotate(360deg);
+}
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+
+.appear {
+  opacity: 1;
+  animation: slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

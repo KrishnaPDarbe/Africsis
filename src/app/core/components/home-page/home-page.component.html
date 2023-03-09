@@ -1,0 +1,39 @@
+<div class="header-container">
+  <africsis-header></africsis-header>
+</div>
+<ngb-carousel *ngIf="bannerImages" #yourElement>
+  <ng-template ngbSlide *ngFor="let item of bannerImages">
+    <div class="picsum-img-wrapper">
+      <img class="banner_image" [src]="item.image" alt="Random first slide" />
+    </div>
+    <div class="carousel-caption">
+      <h1>{{item.title}}</h1>
+      <p>{{item.caption}}</p>
+      <a>Learn more  &#x2192;</a>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<africsis-today></africsis-today>
+
+
+<div style="position: relative;">
+  <africsis-counter-cards></africsis-counter-cards>
+</div>
+
+
+
+<africsis-services></africsis-services>
+
+<africsis-programs></africsis-programs>
+<app-generic-card></app-generic-card>
+<africsis-partners></africsis-partners>
+<africsis-subscribe></africsis-subscribe>
+<africsis-footer></africsis-footer>
+
+
+
+
+
+
+
+

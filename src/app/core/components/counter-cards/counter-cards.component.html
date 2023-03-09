@@ -1,0 +1,19 @@
+<div class="countercard-container">
+  <div class="countercard-title">
+    <h1>A world-leading policy institute</h1>
+    <p>Our mission is to help governments and societies build a sustainable, secure, prosperous and just world. We deliver our mission through dialogue, research and leadership.</p>
+  </div>
+
+  <div class="countercard-row">
+    <ng-container *ngFor="let data of countercardData">
+    <div class="countercard-col fade-in" #counterCard>
+      <div class="counter-box">
+     <img [src]="data.icon" alt="" width="30">
+        <h2>{{data.count}}</h2>
+        <h4>{{data.description}}</h4>
+      </div>
+    </div>
+    </ng-container>
+
+  </div>
+</div>

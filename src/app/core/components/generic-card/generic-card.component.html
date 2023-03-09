@@ -1,0 +1,52 @@
+<div class="africsis_today " *ngIf="africsisNews" >
+  <div class="slider_title">
+    <header>
+      <h2>AFRICSIS EVENTS</h2>
+    </header>
+  </div>
+  <div class="slide-container swiper">
+    <div class="slide-content">
+      <swiper [config]="config">
+        <div class="card-wrapper swiper-wrapper">
+          <ng-container *ngFor="let news of africsisNews">
+            <div class="card swiper-slide fade-in"  #africsisToday >
+              <!-- <div class="image-content">
+                <div class="card-image">
+                  <span>{{news.location}}</span>
+                  <img src="{{news.image}}" alt="" class="card-img">
+                </div>
+              </div> -->
+              <div class="card-content">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>{{news.location}}</p>
+                <h4 class="name">{{news.title}}</h4>
+                <div class="posting">
+                  <span class="posted-by">
+                    <p class="post_description">{{news.description}}</p>
+                  </span>
+                  <!-- <i class=" fa fa-sharp fa-solid fa-circle"></i> -->
+                  <!-- <span class="posted-on">{{news.postedOn}}</span> -->
+                </div>
+                <div style="display: flex;align-items: baseline;width: 100%;position: absolute; bottom: 50px;">
+                  <i class="fa fa-calendar" style="color: #7a7a7a;font-size: 1rem;"></i>
+                  <p class="description">{{news.eventDate}}</p>
+                </div>
+
+                <button class="button">Attend</button>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+      </swiper>
+    </div>
+
+  </div>
+  <!-- <div class="slider_footer">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div> -->
+  <div class="newroom">
+    <a href="https://africsis.org/publications/" title="Opens in a new browser tab." style="color:#fff" target="_blank">VISIT THE NEWSROOM</a>
+  </div>
+</div>

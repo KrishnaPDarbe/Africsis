@@ -1,0 +1,21 @@
+<section>
+  <!-- <div class="container"> -->
+    <div class="servicesRow">
+      <ng-container *ngFor="let service of services ">
+        <div class="col-md-6 fade-in" #servicesCard>
+          <div class="main">
+            <div class="service">
+              <div class="service-logo">
+                <img src="{{service.icon}}" alt="">
+              </div>
+              <h4>{{service.title}}</h4>
+              <p>{{service.description}}</p>
+            </div>
+            <div class="shadowOne"></div>
+            <div class="shadowTwo"></div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  <!-- </div> -->
+</section>
