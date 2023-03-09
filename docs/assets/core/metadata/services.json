@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Vision",
+    "description": "AFRICSIS envisions a safer, more secure and more stable Africa that is obtaining optimum benefits from dual-use science and technology in fields including nuclear energy and space systems.",
+    "icon":"./assets/core/services/vision.png"
+  },
+  {
+    "title": "Mission",
+    "description": "AFRICSIS envisions a safer, more secure and more stable Africa that is obtaining optimum benefits from dual-use science and technology in fields including nuclear energy and space systems.",
+    "icon":"./assets/core/services/mission.png"
+  },
+  {
+    "title": "Goals",
+    "description": "Our goals The goals of the Organization include to promote a system approach to strengthening nonproliferation and arms control of nuclear weapons (and chemical, biological and radiological weapons and their delivery vehicles) and to increase transparency in peaceful nuclear activities in Africa…",
+    "icon":"./assets/core/services/goal.png"
+  },
+  {
+    "title": "Objectives",
+    "description": "The objects of the Organization include disseminating policy-relevant, evidenced-based analysis of Africa’s security challenges and publishing independent research in addressing the strategic dimensions and changing patterns of global security threats, best practices, and lessons learned;",
+    "icon":"./assets/core/services/objectives.png"
+  }
+]
