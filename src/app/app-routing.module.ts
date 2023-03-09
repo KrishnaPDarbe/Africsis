@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./core/core.module').then((m) => m.CoreModule),
   },
   {
+    path: 'africsis',
+    loadChildren: () => import('./core/core.module').then((m) => m.CoreModule),
+  },
+  {
     path: 'about-us',
     loadChildren: () => import('./about-us/about-us.module').then((m) => m.AboutUsModule),
   },
@@ -21,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
