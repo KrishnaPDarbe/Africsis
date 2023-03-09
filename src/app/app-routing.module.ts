@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./core/core.module').then((m) => m.CoreModule),
   },
   {
-    path: 'africsis',
+    path: 'Africsis',
     loadChildren: () => import('./core/core.module').then((m) => m.CoreModule),
   },
   {
